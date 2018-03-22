@@ -10,6 +10,24 @@
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
 
+    function createBox(){
+      return {
+        x: 100,
+        y: 200,
+        size: 20,
+        color: "green"
+      }
+    }
+
+    function drawBoxes(){
+      context.fillStyle = box.color;
+      context.fillRect(box.x,box.y,box.size,box.size)
+
+    }
+
+    var box = createBox();
+    drawBoxes();
+
   </script>
 </body>
 </html>
