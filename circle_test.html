@@ -9,14 +9,14 @@
   <script type="text/javascript">
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
-    var maxSize = 20;
+    var maxSize = 40;
     var boxes = [];
 
     function createBox(){
       return {
         x: randomNum(canvas.width - maxSize),
         y: randomNum(canvas.height - maxSize),
-        size: 20,
+        size: randomNum(maxSize) + 1,
         color: "green"
       }
     }
