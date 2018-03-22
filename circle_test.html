@@ -13,13 +13,15 @@
     var boxes = [];
 
     var maxSize = 40;
+    var maxDuration = 100;
 
     function createBox(){
       return {
         x: randomNum(canvas.width - maxSize),
         y: randomNum(canvas.height - maxSize),
         size: randomNum(maxSize) + 10,
-        color: colors[randomNum(colors.length)]
+        color: colors[randomNum(colors.length)],
+        duration: randomNum(maxDuration) + 10
       }
     }
 
